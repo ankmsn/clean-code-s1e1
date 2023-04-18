@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header-img {
   width: 100%;
 }
-.header .more-info {
+.header-more-info {
   font-family: fantasy, cursive;
 }
 
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.main-add-wrapper {
+.add-mode {
   display: flex;
 }
 ul {
@@ -59,7 +59,7 @@ button:hover {
 }
 /* heading */
 h3,
-label[for="add-mode"] {
+label[for="add"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,11 +85,11 @@ input[type="text"]:focus {
 }
 
 /* new task */
-label[for="add-mode"] {
+label[for="add"] {
   display: block;
   margin: 0 0 20px;
 }
-input#add-mode {
+#add {
   width: 318px;
 }
 
@@ -101,8 +101,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-li > * {
   vertical-align: middle;
 }
 
@@ -116,33 +114,31 @@ li > label {
   width: 226px;
 }
 li > input[type="text"] {
-  width: 226px
+  width: 226px;
+  display: none;
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
 /* completed */
-ul#completed-tasks label {
-  text-decoration: line-through
+#completed label {
+  text-decoration: line-through;
   color: #888;
 }
 
 /* edit task */
-ul li input[type=text] {
-  display:none
-}
 
-ul li.edit-mode input[type=text] {
+.edit-mode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode label {
   display:none;
 }
