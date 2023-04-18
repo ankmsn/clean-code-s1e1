@@ -127,7 +127,9 @@ li {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.incomplete__checkbox,
+.incomplete-edit__checkbox,
+.completed__checkbox {
   margin: 0 10px;
 }
 
